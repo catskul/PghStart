@@ -26,7 +26,9 @@
     a { color: #1663cf; text-decoration: none;}
  
 
-  .css3boxTop { background: white;
+  .css3boxTop
+  {
+    background: white;
     font-size: 20.0px;
     font-family: "Times";
     text-align: left;
@@ -36,9 +38,11 @@
     width: auto;
     padding-bottom: 40px;
     padding-top: 30px;
-    }
+  }
     
-  .css3boxBottom { background: white;
+  .css3boxBottom
+  {
+    background: white;
     font-size: 20px;
     font-family: "Times";
     text-align: left;
@@ -58,17 +62,18 @@
   #announcements { position:absolute; top: 400px;                            right:  30px;  width: 265px;    height: 240px; }
 
   .boxTitle         { position: absolute; bottom: 0px; left:0px; right: 0px; color: #1663cf; text-align: center; text-transform: uppercase; font: 20.0px Helvetica; padding-top: 5px;}
-  .boxTypeSelection { position: absolute; top: 3px; left: 10px; right: 10px; font: 15.0px Helvetica; color: blue;}
-  .featured         { position: absolute; top:0px; left: 0px; color: black; }
-  .popular          { position: absolute; top:0px; right: 0px; text-align: right; color: gray;}
+  .boxTypeSelection { position: absolute; top: 0px; padding-top: 3px; left: 0px; padding-left: 10px; right: 0px; padding-right: 10px; font: 15.0px Helvetica; color: blue;}
+  .boxcontent       { }
+  .featuredButton   { position: absolute; top:0px; padding-top: 3px; left: 0px; padding-left: 10px; color: black; z-index: 101; cursor: pointer;}
+  .popularButton    { position: absolute; top:0px; padding-top: 3px; right: 0px; padding-right: 10px; text-align: right; color: gray; cursor: pointer; }
   
   .boxTitle-bottom         { position: absolute; top: 0px; left:0px; right: 0px; color: #1663cf; text-align: center; text-transform: uppercase; font: 20.0px Helvetica; padding-top: 5px;}
   .boxTypeSelection-bottom { position: absolute; bottom: 0px; left: 10px; right: 10px; font: 15.0px Helvetica; color: blue;}
-  .featured-bottom         { position: absolute; bottom:0px; left: 0px; color: black;}
-  .popular-bottom          { position: absolute; bottom:0px; right: 0px; text-align: right; color: grey;}
+  .featuredButton-bottom         { position: absolute; bottom:0px; left: 0px; color: black; cursor: pointer; }
+  .featuredButton-bottom          { position: absolute; bottom:0px; right: 0px; text-align: right; color: grey; cursor: pointer;}
   
     .preitem  { float: left; margin-right: 3px; padding-top: 3px;}
-    .buttonGroup { border: solid thin; -moz-border-radius: 4px; -webkit-border-radius: 4px;  float: left; overflow: hidden; background: gray; }
+    .buttonGroup { border: solid thin; -moz-border-radius: 4px; -webkit-border-radius: 4px;  float: left; overflow: hidden; background: gray; cursor: pointer; }
     .firstItem
     {
         background: white;
@@ -155,6 +160,54 @@
         return false;
     }
     
+    function selectFeatured(obj)
+    {
+        obj.style.color = 'black';
+        obj.style.borderBottom = 'solid thin';
+        
+        var popularButtons = obj.parentNode.getElementsByClassName( "popularButton" );
+        popularButtons[0].style.color = "gray";
+        popularButtons[0].style.borderBottom = "";
+        
+        var hidecontent = obj.parentNode.parentNode.getElementsByClassName( "boxcontent popular" );
+        for( var i = 0; i < hidecontent.length; ++i )
+        {
+            hidecontent[i].style.display = 'none';
+        }
+        
+        var showcontent = obj.parentNode.parentNode.getElementsByClassName( "boxcontent featured" );
+        for( var i = 0; i < showcontent.length; ++i )
+        {
+            showcontent[i].style.display = 'block';
+        }
+        
+        return false;
+    }
+    
+    function selectPopular(obj)
+    {
+        obj.style.color = 'black';
+        obj.style.borderBottom = 'solid thin';
+        
+        var popularButtons = obj.parentNode.getElementsByClassName( "featuredButton" );
+        popularButtons[0].style.color = "gray";
+        popularButtons[0].style.borderBottom = "";
+        
+        var content = obj.parentNode.parentNode.getElementsByClassName( "boxcontent featured" );
+        for( var i = 0; i < content.length; ++i )
+        {
+            content[i].style.display = 'none';
+        }
+        
+        var showcontent = obj.parentNode.parentNode.getElementsByClassName( "boxcontent popular" );
+        for( var i = 0; i < showcontent.length; ++i )
+        {
+            showcontent[i].style.display = 'block';
+        }
+        
+        return false;
+    }
+    
 //-->
 </script>
 </HEAD><BODY style="margin:0;" background="pittsburgh2.gif">
@@ -178,7 +231,8 @@
  
           <DIV class="viewbox css3boxTop resident" id="services">
             <DIV class="boxTitle"><A href="http://www.city.pittsburgh.pa.us/">City Services</A></DIV>
-            <DIV class="boxTypeSelection"><DIV class="featured">featured</DIV> <DIV class="popular">popular</DIV> </DIV>
+            <DIV class="boxTypeSelection"><DIV class="featuredButton" onclick="selectFeatured(this);">featured</DIV> <DIV class="popularButton" onclick="selectPopular(this);">popular</DIV> </DIV>
+            <DIV class="boxcontent featured">
             <A href="http://www.city.pittsburgh.pa.us/police/">Police Dept</A><BR>
             <A href="http://www.portauthority.org/paac/default.aspx">Public Transportation</A><BR>
             <A href="http://www.pps.k12.pa.us/pps/site/default.asp">Schools</A><BR>
@@ -189,11 +243,12 @@
             <A href="http://www.city.pittsburgh.pa.us/parks/">Parks</A><BR>
             <A href="http://www.city.pittsburgh.pa.us/parks/html/recreation_centers.html">Rec Centers</A><BR>
             <A href="http://www.city.pittsburgh.pa.us/mayor/html/pothole.html"> Report a pothole </A>
+            </DIV>
           </DIV>
           
           <DIV class="viewbox css3boxTop resident" id="faq">
             <DIV class="boxTitle"><a href="FAQ-example.html">FAQ</a></DIV>            
-            <DIV class="boxTypeSelection"><DIV class="featured">featured</DIV> <DIV class="popular">popular</DIV> </DIV>
+            <DIV class="boxTypeSelection"><DIV class="featuredButton">featured</DIV> <DIV class="popularButton">popular</DIV> </DIV>
             <A href="http://www.city.pittsburgh.pa.us/police/html/tow_pound.html">My car was towed. What do I do?</A><BR>
             <A href="http://www.city.pittsburgh.pa.us/pw/html/collection_schedules.html">When is garbage collected?</A><BR>
             <A href="http://www.city.pittsburgh.pa.us/pw/html/collection_schedules.html">When is recycling collected?</A><BR>
@@ -205,7 +260,7 @@
           
           <DIV class="viewbox css3boxTop resident" id="events">
             <DIV class="boxTitle">Events</DIV>
-            <DIV class="boxTypeSelection"><DIV class="featured">featured</DIV> <DIV class="popular">popular</DIV> </DIV>
+            <DIV class="boxTypeSelection"><DIV class="featuredButton">featured</DIV> <DIV class="popularButton">popular</DIV> </DIV>
             <A href="http://catskul.org/Mockup2.html#">April   2 - Geek Art Festival</A><BR>
             <A href="http://catskul.org/Mockup2.html#">April   4 - TEDxCMU</A><BR>
             <A href="http://catskul.org/Mockup2.html#">April 11 - Free Ride Bike Class</A><BR>
@@ -224,7 +279,7 @@
           
           <DIV class="viewbox css3boxBottom resident" id="neighborhoods">
             <DIV class="boxTitle-bottom"><A href="Neighborhoods.html">neighborhoods</A></DIV>
-            <DIV class="boxTypeSelection-bottom"><DIV class="featured-bottom">featured</DIV> <DIV class="popular-bottom">popular</DIV> </DIV>
+            <DIV class="boxTypeSelection-bottom"><DIV class="featuredButton-bottom">featured</DIV> <DIV class="popularButton-bottom">popular</DIV> </DIV>
               <A href="http://catskul.org/Mockup2.html#">Squirrel Hill</A><BR>
               <A href="http://www.southsidepgh.com/">South Side</A><BR>
               <A href="http://catskul.org/Mockup2.html#">Shady Side</A><BR>
@@ -239,7 +294,7 @@
           
           <DIV class="viewbox css3boxBottom resident" id="government">
             <DIV class="boxTitle-bottom">Government</DIV>
-            <DIV class="boxTypeSelection-bottom"><DIV class="featured-bottom">featured</DIV> <DIV class="popular-bottom">popular</DIV> </DIV>
+            <DIV class="boxTypeSelection-bottom"><DIV class="featuredButton-bottom">featured</DIV> <DIV class="popularButton-bottom">popular</DIV> </DIV>
             <A href="http://www.city.pittsburgh.pa.us/council/">City Council</A><BR>
             <A href="http://www.alleghenycourts.us/">Pittsburgh District Court</A><BR>
             <A href="http://www.city.pittsburgh.pa.us/parks/">Parks Dept</A><BR>
@@ -249,7 +304,7 @@
           
           <DIV class="viewbox css3boxBottom resident" id="announcements">
             <DIV class="boxTitle-bottom">Announcements</DIV>
-            <DIV class="boxTypeSelection-bottom"><DIV class="featured-bottom">featured</DIV> <DIV class="popular-bottom">popular</DIV> </DIV>
+            <DIV class="boxTypeSelection-bottom"><DIV class="featuredButton-bottom">featured</DIV> <DIV class="popularButton-bottom">popular</DIV> </DIV>
               <A href="http://catskul.org/Mockup2.html#">Now accepting mixed recycling</A><BR>
               <A href="http://catskul.org/Mockup2.html#">Market Square Work Finished</A><BR>
               <A href="http://catskul.org/Mockup2.html#">Construction on Penn Ave</A><BR>
