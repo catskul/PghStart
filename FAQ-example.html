@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            margin:0;
+            background: url(pittsburgh2.gif);
+        }
+        
+        #backbar
+        {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            height: 9mm;
+            padding-bottom: 3px;
+            z-index: 100;
+        }
+        
+        #headerbar
+        {
+            position: relative;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            height: 9mm;
+            padding-bottom: 3px;
+            z-index: 100;
+        }
+        
+        #crest
+        {
+            position: absolute;
+            top: 2px;
+            left: 5px;
+            z-index: 103;
+        }
+        
+        #container
+        {
+            position: relative;
+            width: 1024px;
+            margin: 0 auto;
+        }
+        
+        #backgroundTrick
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 110%;
+            width: 100%;
+            background: black;
+            opacity: 0.6;
+            margin:0;
+            z-index: -1;
+        }        
+        
+        #title { position: absolute; top: 10px; left: 50px;  font: 25.0px Helvetica; font-weight: bold; }
+        
+        .QuestionAnswer
+        {
+            background-color: white;
+            color: black;
+            -moz-border-radius: 4px; -webkit-border-radius: 4px;
+            padding: 4px;
+            margin: 5px;
+            border: solid thin black;
+            text-transform: capitalize;
+        }
+        
+        .Question
+        {
+            padding: 5px;
+        }
+                
+        .Question:before
+        {
+            vertical-align: middle;
+            font-size: 30px;
+            content: "Q: ";
+        }
+        
+        .Answer
+        {
+            padding: 5px;
+            background-color: #dddddd;
+            margin-left: 20px;
+            margin-right: 3px;
+            margin-bottom: 3px;
+            padding-left: 10px;
+            -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px;
+            -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px;
+        }
+        
+        .Answer:before
+        {
+            vertical-align: middle;
+            font-size: 30px;
+            content: "A: ";
+        }
+    </style>
+</head>
+<body>
+    <div id="backbar"></div>
+    <div id="container">
+        <div id="headerbar">
+            <div id="crest">
+                <img src="crest.png">
+            </div>
+            <div id="title">
+                FAQ
+            </div>
+        </div>        
+        <div id="backgroundTrick"></div>
+            
+        <div class="QuestionAnswer">
+            <div class="Question">
+                My car was towed. What do I do?
+            </div>
+            <div class="Answer">
+                Call Batman!
+            </div>
+        </div>
+    
+        <div class="QuestionAnswer">
+            <div class="Question">
+                Hi, I'm a question?
+            </div>
+            <div class="Answer">
+                Hi, I'm an answer
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

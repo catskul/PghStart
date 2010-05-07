@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <style type="text/css">
+    #headerbar { margin: 0 auto; margin-top: -5; width: 1024px; height: 20cm;}
+    #headerbarA { position: relative; background: #ffff27; height: 9mm; text-align: right; vertical-align: sub; font: 20.0px Helvetica; padding-bottom: 3px;}
+    #backstuff  { position: absolute; width: 100%; }
+    .stretch    { width: 100%; }
+    #headerbarB { position: relative; background: black; text-align: center; height: 100%; overflow: hidden;}
+    #imageTrick { position: relative; height: 0px; top: 2px; left: 10px; bottom: 0; z-index: 10;}
+    #title      { position: absolute; top: 10px; left: 60px;  font: 25.0px Helvetica; font-weight: bold;}
+    #textTrick  { position: relative; bottom: -10px; text-align: right;}
+    #sealTrick  { position: absolute; left: 50%; margin-left: -100px; top: 300px; z-index: 10; }
+    #boxTrick   { float: left; margin: 20px; width: 300px; background: white; border-style: none;}
+    #outerTable{ width: 100%; }
+    #innerTable{ width: 100%;}
+    #row0{ height:3cm; background: black;}
+ 
+
+  .css3box { background: white;
+    font: 20.0px Ariel;
+    text-align: left;
+    padding:1em;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    width: auto;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    }
+    
+  #services      { position:absolute; top:  70px;              left:   30px;                width: 265px;    height: 240px; }
+  #faq           { position:absolute; top:  50px;              left:  350px; right: 350px;  width:   0 auto; height: 170px; }
+  #events        { position:absolute; top:  70px;                            right:  30px;  width: 265px;    height: 240px; }
+  #neighborhoods { position:absolute; top: 400px;              left:   30px;                width: 265px;    height: 240px; }
+  #government    { position:absolute; top: 505px;              left:  350px; right: 350px;  width:   0 auto; height: 180px; }
+  #announcements { position:absolute; top: 400px;                            right:  30px;  width: 265px;    height: 240px; }
+
+  .boxTitle         { position: absolute; bottom: 0px; left:0px; right: 0px; color: blue; text-align: center; text-transform: uppercase; font: 20.0px Helvetica;}
+  .boxTypeSelection { position: absolute; top: 3px; left: 10px; right: 10px; font: 15.0px Helvetica; color: blue;}
+  .featured         { position: absolute; top:0px; left: 0px; }
+  .popular          { position: absolute; top:0px; right: 0px; text-align: right;}
+  
+  .boxTitle-bottom         { position: absolute; top: 3px; left:0px; right: 0px; color: blue; text-align: center; text-transform: uppercase; font: 20.0px Helvetica;}
+  .boxTypeSelection-bottom { position: absolute; bottom: 0px; left: 10px; right: 10px; font: 15.0px Helvetica; color: blue;}
+  .featured-bottom         { position: absolute; bottom:0px; left: 0px; }
+  .popular-bottom          { position: absolute; bottom:0px; right: 0px; text-align: right;}
+  
+  .firstItem{ border: solid thin; -moz-border-radius: 4px; -webkit-border-radius: 4px; padding-top: 3px; padding-left: 10px; padding-right: 10px; background: white;}
+  .item     { border: solid thin;   padding-top: 3px; padding-left: 5px;  padding-right: 5px; background: white;  margin-left: -5px; margin-right: -5px; z-index:20;}
+  .lastItem { border: solid thin; -moz-border-radius: 4px; -webkit-border-radius: 4px; padding-top: 3px; padding-left: 10px;  padding-right: 10px; background: white; margin-right: 5px;}
+  </style>
+</head>
+<body style="margin:0;">
+  <div id="headerbar">
+    <div id="imageTrick">
+      <img src="crest.png">
+    </div>
+    <div id="headerbarA">
+      <div id="title">
+        Pittsburgh
+      </div>
+      <div id="textTrick">
+I'm a: <span class="firstItem">Resident</span><span class="item">Visitor</span><span class="lastItem">Business</span>
+      </div>
+    </div>
+        <div id="headerbarB">
+          <div id="backstuff"><img src="atnight.jpg" class="stretch"></div>
+ 
+          <div class="css3box" id="services">
+            <div class="boxTypeSelection"><div class="featured">featured</div> <div class="popular">popular</div> </div>
+            Police Dept<br>
+            Port Authority<br>
+            Schools<br>
+            Emergency<br>
+            Refuse Collection<br>
+            Impound<br>
+            Parks<br>
+            Rec Centers<br>
+            <div class="boxTitle">City Services</div>
+          </div>
+          
+          <div class="css3box" id="faq">
+            <div class="boxTypeSelection"><div class="featured">featured</div> <div class="popular">popular</div> </div>
+            My car was towed. What do I do?<br>
+            When is garbage collected?<br>
+            When is recycling collected?<br>
+            How much does a bus ride cost?<br>
+            Where is City Hall?<br>
+            Who is my representitive?<br>
+            What is the tax rate in the city?<br>
+            <div class="boxTitle">FAQ</div>
+          </div>
+          
+          <div class="css3box" id="events">
+            <div class="boxTypeSelection"><div class="featured">featured</div> <div class="popular">popular</div> </div>
+            April   2 - Geek Art Festival<br>
+            April   4 - TEDxCMU<br>
+            April 11 - Free Ride Bike Class<br>
+            April 14 - Bacon Live<br>
+            April 15 - CMU Spring Carnival<br>
+            April 17 - Something Here<br>
+            April 21 - Music Event<br>
+            April 27 - Govt Event<br>
+            April 30 - Sports Event<br>
+            May    1 - Parks Event<br>
+            <div class="boxTitle">Events</div>
+          </div>
+          
+          <div id="sealTrick">
+            <img src="PghSeal.png">
+          </div>
+          
+          <div class="css3box" id="neighborhoods">
+            <div class="boxTypeSelection-bottom"><div class="featured-bottom">featured</div> <div class="popular-bottom">popular</div> </div>
+              Squirrel Hill<br>
+              South Side<br>
+              Shady Side<br>
+              Hill District<br>
+              North Side<br>
+              Lawrenceville<br>
+              Downtown<br>
+              Strip District<br>
+              East End<br>
+            <div class="boxTitle-bottom">neighborhoods</div>
+          </div>
+          
+          <div class="css3box" id="government">
+            <div class="boxTypeSelection-bottom"><div class="featured-bottom">featured</div> <div class="popular-bottom">popular</div> </div>
+            City Council<br>
+            Pittsburgh District Court<br>
+            Parks Dept<br>
+            Sheriff's office<br>
+            HHS<br>
+
+            <div class="boxTitle-bottom">Government</div>
+          </div>
+          
+          <div class="css3box" id="announcements">
+            <div class="boxTypeSelection-bottom"><div class="featured-bottom">featured</div> <div class="popular-bottom">popular</div> </div>
+              Now accepting mixed recycling<br>
+              Market Square Work Finished<br>
+              Construction on Penn Ave<br>
+              Census Due By Friday Apr 9<br>
+              New Bus Routes Begin Apr 12<br>
+              Fair Increase Effective Apr 12<br>
+              No Parking On 5th for Parade<br>
+            <div class="boxTitle-bottom">Announcements</div>
+          </div>
+
+
+        </div>
+    </div>
+  </div>
+</body>
+</html>

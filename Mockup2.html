@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+  <META http-equiv="Content-Style-Type" content="text/css">
+  <TITLE></TITLE>
+  <STYLE type="text/css">
+    #headerbar { margin: 0 auto; margin-top: 0px; width: 1024px; height: 30cm;}
+    #backbar   { position: absolute; background: #FFFFFF; height: 9mm; width: 100%; padding-bottom: 3px;}
+    #headerbarA { position: relative; background: #FFFFFF; height: 9mm; text-align: right; vertical-align: sub; font: 20.0px Helvetica; padding-bottom: 3px;}
+    #backstuff  { position: absolute; width: 100%; display: none;}
+    .stretch    { width: 100%; }
+    #lowerBody { position: relative; background: none; text-align: center; height: 100%; overflow: hidden;}
+    #container { opacity: 1; height:100%}
+    #backgroundTrick { position: absolute; height: 110%; width: 100%; background: black; opacity: 0.6; margin:0;}
+    #imageTrick { position: relative; height: 0px; top: 2px; left: 5px; bottom: 0; z-index: 10;}
+    #title      { position: absolute; top: 10px; left: 50px;  font: 25.0px Helvetica; font-weight: bold;}
+    #textTrick  { position: absolute; right: 5px; bottom: 5px; text-align: right;}
+    #sealTrick  { position: absolute; left: 50%; margin-left: -95px; top: 300px; z-index: 10; }
+    #boxTrick   { float: left; margin: 20px; width: 300px; background: white; border-style: none;}
+    #outerTable{ width: 100%; }
+    #innerTable{ width: 100%;}
+    #row0{ height:3cm; background: black;}
+	#copyright { position:absolute; bottom: 0px; width: 100%; margin: 0 auto; text-align: center; color: white;}
+    
+    a { color: #1663cf; text-decoration: none;}
+ 
+
+  .css3boxTop { background: white;
+    font-size: 20.0px;
+    font-family: "Times";
+    text-align: left;
+    padding:1em;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    width: auto;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    }
+    
+  .css3boxBottom { background: white;
+    font-size: 20px;
+    font-family: "Times";
+    text-align: left;
+    padding:1em;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    width: auto;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    }  
+    
+  #services      { position:absolute; top:  70px;              left:   30px;                width: 265px;    height: 240px; }
+  #faq           { position:absolute; top:  50px;              left:  350px; right: 350px;  width:   0 auto; height: 170px; }
+  #events        { position:absolute; top:  70px;                            right:  30px;  width: 265px;    height: 240px; }
+  #neighborhoods { position:absolute; top: 400px;              left:   30px;                width: 265px;    height: 240px; }
+  #government    { position:absolute; top: 500px;              left:  350px; right: 350px;  width:   0 auto; height: 180px; }
+  #announcements { position:absolute; top: 400px;                            right:  30px;  width: 265px;    height: 240px; }
+
+  .boxTitle         { position: absolute; bottom: 0px; left:0px; right: 0px; color: #1663cf; text-align: center; text-transform: uppercase; font: 20.0px Helvetica; padding-top: 5px;}
+  .boxTypeSelection { position: absolute; top: 3px; left: 10px; right: 10px; font: 15.0px Helvetica; color: blue;}
+  .featured         { position: absolute; top:0px; left: 0px; color: black; }
+  .popular          { position: absolute; top:0px; right: 0px; text-align: right; color: gray;}
+  
+  .boxTitle-bottom         { position: absolute; top: 0px; left:0px; right: 0px; color: #1663cf; text-align: center; text-transform: uppercase; font: 20.0px Helvetica; padding-top: 5px;}
+  .boxTypeSelection-bottom { position: absolute; bottom: 0px; left: 10px; right: 10px; font: 15.0px Helvetica; color: blue;}
+  .featured-bottom         { position: absolute; bottom:0px; left: 0px; color: black;}
+  .popular-bottom          { position: absolute; bottom:0px; right: 0px; text-align: right; color: grey;}
+  
+    .preitem  { float: left; margin-right: 3px; padding-top: 3px;}
+    .buttonGroup { border: solid thin; -moz-border-radius: 4px; -webkit-border-radius: 4px;  float: left; overflow: hidden; background: gray; }
+    .firstItem
+    {
+        background: white;
+        -moz-border-radius-topleft: 4px;
+        -webkit-border-top-left-radius: 4px;
+        -moz-border-radius-bottomleft: 4px;
+        -webkit-border-bottom-left-radius: 4px;
+        padding-right: 5px;
+        padding-left:5px;
+        padding-top:3px;
+        float: left;
+        overflow: hidden;
+    }
+    .item
+    {
+        background: transparent;
+        border: solid thin;
+        margin: -1px; 4px;
+        padding-right: 5px;
+        padding-left:5px;
+        padding-top:3px;
+        float: left;
+    }
+    .lastItem
+    {
+        background: transparent;
+        -moz-border-radius-topright: 4px;
+        -webkit-border-top-right-radius: 4px;
+        -moz-border-radius-bottomright: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        padding-right: 5px;
+        padding-left:5px;
+        padding-top:3px;
+        float: left;
+        margin-left: 1px;
+    }
+  </STYLE>
+  <script type="text/javascript">
+<!--
+    function toggle_visibility(id)
+    {
+        var e = document.getElementById(id);
+        if(e.style.display != 'none')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+            
+        return false;
+    }
+    
+    function select_from(obj, group)
+    {
+        var selectee = obj;
+        var others = document.getElementsByClassName(group);
+       
+        for( var i = 0; i < others.length; ++i )
+        {
+            others[i].style.background = 'transparent';
+        }
+        
+        selectee.style.background = 'white';
+            
+        return false;
+    }
+    
+    function select_view(obj,view)
+    {
+        select_from(obj,"viewSelector");
+        
+        var allViews = document.getElementsByClassName("viewbox");
+       
+        for( var i = 0; i < allViews.length; ++i )
+        {
+            allViews[i].style.display = 'none';
+        }
+        
+        var selectedView = document.getElementsByClassName(view);
+        
+        for( var i = 0; i < selectedView.length; ++i )
+        {
+            selectedView[i].style.display = 'block';
+        }
+            
+        return false;
+    }
+    
+//-->
+</script>
+</HEAD><BODY style="margin:0;" background="pittsburgh2.gif">
+  <DIV id="backbar"></DIV>
+  <DIV id="headerbar">
+    <DIV id="imageTrick">
+      <IMG src="crest.png">
+    </DIV>
+    <DIV id="headerbarA">
+      <DIV id="title">
+        Pittsburgh
+      </DIV>
+      <DIV id="textTrick">
+<DIV class="preitem">I'm a:</DIV><DIV class="buttonGroup"><DIV class="firstItem viewSelector" onClick="select_view(this, 'resident')">Resident</DIV><DIV class="item viewSelector" onClick="select_view(this, 'visitor')">Visitor</DIV><DIV class="lastItem viewSelector" onClick="select_view(this, 'business')">Business</DIV></DIV>
+      </DIV>
+    </DIV>
+        <DIV id="lowerBody">
+          <DIV id="container">
+            <DIV id="backgroundTrick">foo</DIV>
+          <DIV id="backstuff"><IMG src="atnight.jpg" class="stretch"></DIV>
+ 
+          <DIV class="viewbox css3boxTop resident" id="services">
+            <DIV class="boxTitle"><A href="http://www.city.pittsburgh.pa.us/">City Services</A></DIV>
+            <DIV class="boxTypeSelection"><DIV class="featured">featured</DIV> <DIV class="popular">popular</DIV> </DIV>
+            <A href="http://www.city.pittsburgh.pa.us/police/">Police Dept</A><BR>
+            <A href="http://www.portauthority.org/paac/default.aspx">Public Transportation</A><BR>
+            <A href="http://www.pps.k12.pa.us/pps/site/default.asp">Schools</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">Emergency</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/pw/html/refuse.html">Refuse Collection</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/pw/html/residential_and_apartments.html">Recycling</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/police/html/tow_pound.html">Impound</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/parks/">Parks</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/parks/html/recreation_centers.html">Rec Centers</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/mayor/html/pothole.html"> Report a pothole </A>
+          </DIV>
+          
+          <DIV class="viewbox css3boxTop resident" id="faq">
+            <DIV class="boxTitle"><a href="FAQ-example.html">FAQ</a></DIV>            
+            <DIV class="boxTypeSelection"><DIV class="featured">featured</DIV> <DIV class="popular">popular</DIV> </DIV>
+            <A href="http://www.city.pittsburgh.pa.us/police/html/tow_pound.html">My car was towed. What do I do?</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/pw/html/collection_schedules.html">When is garbage collected?</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/pw/html/collection_schedules.html">When is recycling collected?</A><BR>
+            <A href="http://www.portauthority.org/PAAC/FaresPasses/Fares/tabid/122/Default.aspx">How much does a bus ride cost?</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">Where is City Hall?</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/council/">Who is my representitive?</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">What is the tax rate in the city?</A><BR>
+          </DIV>
+          
+          <DIV class="viewbox css3boxTop resident" id="events">
+            <DIV class="boxTitle">Events</DIV>
+            <DIV class="boxTypeSelection"><DIV class="featured">featured</DIV> <DIV class="popular">popular</DIV> </DIV>
+            <A href="http://catskul.org/Mockup2.html#">April   2 - Geek Art Festival</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">April   4 - TEDxCMU</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">April 11 - Free Ride Bike Class</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">April 14 - Bacon Live</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">April 15 - CMU Spring Carnival</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">April 17 - Something Here</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">April 21 - Music Event</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">April 27 - Govt Event</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">April 30 - Sports Event</A><BR>
+            <A href="http://catskul.org/Mockup2.html#">May    1 - Parks Event</A><BR>
+          </DIV>
+          
+          <DIV id="sealTrick">
+            <IMG src="PghSeal4.png">
+          </DIV>
+          
+          <DIV class="viewbox css3boxBottom resident" id="neighborhoods">
+            <DIV class="boxTitle-bottom"><A href="Neighborhoods.html">neighborhoods</A></DIV>
+            <DIV class="boxTypeSelection-bottom"><DIV class="featured-bottom">featured</DIV> <DIV class="popular-bottom">popular</DIV> </DIV>
+              <A href="http://catskul.org/Mockup2.html#">Squirrel Hill</A><BR>
+              <A href="http://www.southsidepgh.com/">South Side</A><BR>
+              <A href="http://catskul.org/Mockup2.html#">Shady Side</A><BR>
+              <A href="http://catskul.org/Mockup2.html#">Hill District</A><BR>
+              <A href="http://catskul.org/Mockup2.html#">North Side</A><BR>
+              <A href="http://www.lawrencevillecorp.com/">Lawrenceville</A><BR>
+              <A href="http://phcapgh.org/">Polish Hill</A>
+              <A href="http://catskul.org/Mockup2.html#">Downtown</A><BR>
+              <A href="http://www.neighborsinthestrip.com/">Strip District</A><BR>
+              <A href="http://www.eastliberty.org/community.html">East Liberty (East End)</A><BR>
+          </DIV>
+          
+          <DIV class="viewbox css3boxBottom resident" id="government">
+            <DIV class="boxTitle-bottom">Government</DIV>
+            <DIV class="boxTypeSelection-bottom"><DIV class="featured-bottom">featured</DIV> <DIV class="popular-bottom">popular</DIV> </DIV>
+            <A href="http://www.city.pittsburgh.pa.us/council/">City Council</A><BR>
+            <A href="http://www.alleghenycourts.us/">Pittsburgh District Court</A><BR>
+            <A href="http://www.city.pittsburgh.pa.us/parks/">Parks Dept</A><BR>
+            <A href="http://sheriffalleghenycounty.com/">Sheriff's office</A><BR>
+            <A href="http://library4.municode.com/default-test/home.htm?infobase=13525&doc_action=whatsnew">City Laws</A>
+          </DIV>
+          
+          <DIV class="viewbox css3boxBottom resident" id="announcements">
+            <DIV class="boxTitle-bottom">Announcements</DIV>
+            <DIV class="boxTypeSelection-bottom"><DIV class="featured-bottom">featured</DIV> <DIV class="popular-bottom">popular</DIV> </DIV>
+              <A href="http://catskul.org/Mockup2.html#">Now accepting mixed recycling</A><BR>
+              <A href="http://catskul.org/Mockup2.html#">Market Square Work Finished</A><BR>
+              <A href="http://catskul.org/Mockup2.html#">Construction on Penn Ave</A><BR>
+              <A href="http://catskul.org/Mockup2.html#">Census Due By Friday Apr 9</A><BR>
+              <A href="http://catskul.org/Mockup2.html#">New Bus Routes Begin Apr 12</A><BR>
+              <A href="http://catskul.org/Mockup2.html#">Fair Increase Effective Apr 12</A><BR>
+              <A href="http://catskul.org/Mockup2.html#">No Parking On 5th for Parade</A><BR>
+          </DIV>
+          </DIV>
+		  
+		  <div id="copyright">Copyright &#169; Andrew Somerville 2010, All rights reserved</div>
+
+        </DIV>
+    </DIV>
+  
+
+
+</BODY></HTML>
