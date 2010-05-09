@@ -1,0 +1,106 @@
+    
+    #headerbar { margin: 0 auto; margin-top: 0px; width: 1024px; height: 30cm;}
+    #backbar   { position: absolute; background: #FFFFFF; height: 9mm; width: 100%; padding-bottom: 3px;}
+    #headerbarA { position: relative; background: #FFFFFF; height: 9mm; text-align: right; vertical-align: sub; font: 20.0px Helvetica; padding-bottom: 3px;}
+    #backstuff  { position: absolute; width: 100%; display: none;}
+    .stretch    { width: 100%; }
+    #lowerBody { position: relative; background: none; text-align: center; height: 100%; overflow: hidden;}
+    #container { opacity: 1; height:100%}
+    #backgroundTrick { position: absolute; height: 110%; width: 100%; background: black; opacity: 0.6; margin:0;}
+    #imageTrick { position: relative; height: 0px; top: 2px; left: 5px; bottom: 0; z-index: 10;}
+    #title      { position: absolute; top: 10px; left: 50px;  font: 25.0px Helvetica; font-weight: bold;}
+    #textTrick  { position: absolute; right: 5px; bottom: 5px; text-align: right;}
+    #sealTrick  { position: absolute; left: 50%; margin-left: -95px; top: 300px; z-index: 10; }
+    #boxTrick   { float: left; margin: 20px; width: 300px; background: white; border-style: none;}
+    #outerTable{ width: 100%; }
+    #innerTable{ width: 100%;}
+    #row0{ height:3cm; background: black;}
+	#copyright { position:absolute; bottom: 0px; width: 100%; margin: 0 auto; text-align: center; color: white;}
+    
+    a { color: #1663cf; text-decoration: none;}
+ 
+
+  .css3boxTop
+  {
+    background: white;
+    font-size: 20.0px;
+    font-family: "Times";
+    text-align: left;
+    padding:1em;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    width: auto;
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+    
+  .css3boxBottom
+  {
+    background: white;
+    font-size: 20px;
+    font-family: "Times";
+    text-align: left;
+    padding:1em;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    width: auto;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    }  
+    
+  #services      { position:absolute; top:  70px;              left:   30px;                width: 265px;    height: 240px; }
+  #faq           { position:absolute; top:  50px;              left:  350px; right: 350px;  width:   0 auto; height: 170px; }
+  #events        { position:absolute; top:  70px;                            right:  30px;  width: 265px;    height: 240px; }
+  #neighborhoods { position:absolute; top: 400px;              left:   30px;                width: 265px;    height: 240px; }
+  #government    { position:absolute; top: 500px;              left:  350px; right: 350px;  width:   0 auto; height: 180px; }
+  #announcements { position:absolute; top: 400px;                            right:  30px;  width: 265px;    height: 240px; }
+
+  .boxTitle         { position: absolute; bottom: 0px; left:0px; right: 0px; color: #1663cf; text-align: center; text-transform: uppercase; font: 20.0px Helvetica; padding-top: 5px;}
+  .boxTypeSelection { position: absolute; top: 0px; padding-top: 3px; left: 0px; padding-left: 10px; right: 0px; padding-right: 10px; font: 15.0px Helvetica; color: blue;}
+  .boxcontent       { }
+  .featuredButton   { position: absolute; top:0px; padding-top: 3px; left: 0px; padding-left: 10px; color: black; z-index: 101; cursor: pointer;}
+  .popularButton    { position: absolute; top:0px; padding-top: 3px; right: 0px; padding-right: 10px; text-align: right; color: gray; cursor: pointer; }
+  
+  .boxTitle-bottom         { position: absolute; top: 0px; left:0px; right: 0px; color: #1663cf; text-align: center; text-transform: uppercase; font: 20.0px Helvetica; padding-top: 5px;}
+  .boxTypeSelection-bottom { position: absolute; bottom: 0px; left: 10px; right: 10px; font: 15.0px Helvetica; color: blue;}
+  .featuredButton-bottom         { position: absolute; bottom:0px; left: 0px; color: black; cursor: pointer; }
+  .featuredButton-bottom          { position: absolute; bottom:0px; right: 0px; text-align: right; color: grey; cursor: pointer;}
+  
+    .preitem  { float: left; margin-right: 3px; padding-top: 3px;}
+    .buttonGroup { border: solid thin; -moz-border-radius: 4px; -webkit-border-radius: 4px;  float: left; overflow: hidden; background: gray; cursor: pointer; }
+    .firstItem
+    {
+        background: white;
+        -moz-border-radius-topleft: 4px;
+        -webkit-border-top-left-radius: 4px;
+        -moz-border-radius-bottomleft: 4px;
+        -webkit-border-bottom-left-radius: 4px;
+        padding-right: 5px;
+        padding-left:5px;
+        padding-top:3px;
+        float: left;
+        overflow: hidden;
+    }
+    .item
+    {
+        background: transparent;
+        border: solid thin;
+        margin: -1px; 
+        padding-right: 5px;
+        padding-left:5px;
+        padding-top:3px;
+        float: left;
+    }
+    .lastItem
+    {
+        background: transparent;
+        -moz-border-radius-topright: 4px;
+        -webkit-border-top-right-radius: 4px;
+        -moz-border-radius-bottomright: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        padding-right: 5px;
+        padding-left:5px;
+        padding-top:3px;
+        float: left;
+        margin-left: 1px;
+    }
