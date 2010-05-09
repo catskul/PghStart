@@ -1,21 +1,21 @@
-    
-    #headerbar { margin: 0 auto; margin-top: 0px; width: 1024px; height: 30cm;}
-    #backbar   { position: absolute; background: #FFFFFF; height: 9mm; width: 100%; padding-bottom: 3px;}
-    #headerbarA { position: relative; background: #FFFFFF; height: 9mm; text-align: right; vertical-align: sub; font: 20.0px Helvetica; padding-bottom: 3px;}
-    #backstuff  { position: absolute; width: 100%; display: none;}
-    .stretch    { width: 100%; }
-    #lowerBody { position: relative; background: none; text-align: center; height: 100%; overflow: hidden;}
-    #container { opacity: 1; height:100%}
-    #backgroundTrick { position: absolute; height: 110%; width: 100%; background: black; opacity: 0.6; margin:0;}
-    #imageTrick { position: relative; height: 0px; top: 2px; left: 5px; bottom: 0; z-index: 10;}
-    #title      { position: absolute; top: 10px; left: 50px;  font: 25.0px Helvetica; font-weight: bold;}
-    #textTrick  { position: absolute; right: 5px; bottom: 5px; text-align: right;}
-    #sealTrick  { position: absolute; left: 50%; margin-left: -95px; top: 300px; z-index: 10; }
-    #boxTrick   { float: left; margin: 20px; width: 300px; background: white; border-style: none;}
-    #outerTable{ width: 100%; }
-    #innerTable{ width: 100%;}
-    #row0{ height:3cm; background: black;}
-	#copyright { position:absolute; bottom: 0px; width: 100%; margin: 0 auto; text-align: center; color: white;}
+
+#backbar    { position: absolute; background: #FFFFFF; height: 9mm; width: 100%; padding-bottom: 3px; }    
+#page       { position: relative; margin: 0 auto; margin-top: 0px; width: 1024px; height: 30cm;}
+#headerbar  { position: relative; background: #FFFFFF; height: 9mm; text-align: right; vertical-align: sub; font: 20.0px Helvetica; padding-bottom: 3px; }
+#backstuff  { position: absolute; width: 100%; display: none;}
+.stretch    { width: 100%; }
+#lowerBody  { position: relative; background: none; text-align: center; height: 100%; overflow: hidden;}
+#container  { opacity: 1; height:100%}
+#backgroundTrick { position: absolute; height: 110%; width: 100%; background: black; opacity: 0.6; margin:0;}
+#imageTrick { position: relative; height: 0px; top: 2px; left: 5px; bottom: 0; z-index: 10;}
+#title      { position: absolute; top: 10px; left: 50px;  font: 25.0px Helvetica; font-weight: bold;}
+#textTrick  { position: absolute; right: 5px; bottom: 5px; text-align: right;}
+#sealTrick  { position: absolute; left: 50%; margin-left: -95px; top: 300px; z-index: 10; }
+#boxTrick   { float: left; margin: 20px; width: 300px; background: white; border-style: none;}
+#outerTable{ width: 100%; }
+#innerTable{ width: 100%;}
+#row0{ height:3cm; background: black;}
+#copyright { position:absolute; bottom: 0px; width: 100%; margin: 0 auto; text-align: center; color: white;}
     
     a { color: #1663cf; text-decoration: none;}
  
