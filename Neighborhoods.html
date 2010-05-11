@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="default_style.css" type="text/css">		
     <style type="text/css">
         #map { position: absolute; margin: 0 auto; top: 0px; width: 100%; text-align: center; }
-        #overlay { position: absolute; margin: 0 auto; top: 0px; width: 100%; text-align: center; }
+        #overlay { position: absolute; margin: 0 auto; top: 0px; width: 100%; text-align: center; display: none; }
         #backgroundTrick  {  background: white;  } 		
 
     </style>
@@ -31,9 +31,9 @@
 			<div id="textTrick">
 				<div class="preitem">View:</div>
 				<div class="buttonGroup">
-					<div class="firstItem viewSelector" onclick="select_view(this, 'neighborhoods')">Neighborhoods</div>
-					<div class="item viewSelector" onclick="select_view(this, 'neighborhoods councilDistricts')">Council Districts</div>
-					<div class="lastItem viewSelector" onclick="select_view(this, 'map zipCodes')">Zip Codes</div>
+					<div class="firstItem viewSelector" onclick="select_view(this, ['neighborhoods'])">Neighborhoods</div>
+					<div class="item viewSelector" onclick="select_view(this, ['neighborhoods', 'councilDistricts'])">Council Districts</div>
+					<div class="lastItem viewSelector" onclick="select_view(this, ['neighborhoods', 'zipCodes'])">Zip Codes</div>
 				</div>
 			</div>
 		</div>

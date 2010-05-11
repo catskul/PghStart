@@ -24,7 +24,7 @@
 			return false;
 		}
 		
-		function select_view(obj,view)
+		function select_view(obj,viewItems)
 		{
 			select_from(obj,"viewSelector");
 			
@@ -35,11 +35,15 @@
 				allViews[i].style.display = 'none';
 			}
 			
-			var selectedView = document.getElementsByClassName(view);
 			
-			for( var i = 0; i < selectedView.length; ++i )
+			for( var i = 0; i < viewItems.length; ++i )
 			{
-				selectedView[i].style.display = 'block';
+				var selectedView = document.getElementsByClassName(viewItems[i]);
+				
+				for( var j = 0; j < selectedView.length; ++j )
+				{
+					selectedView[j].style.display = 'block';
+				}
 			}
 				
 			return false;
