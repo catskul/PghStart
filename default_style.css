@@ -17,7 +17,7 @@ body
 #title      { position: absolute; top: 10px; left: 50px;  font: 25.0px Helvetica; font-weight: bold;}
 #textTrick  { position: absolute; right: 5px; bottom: 5px; text-align: right;}
 #sealTrick  { position: absolute; left: 50%; margin-left: -95px; top: 300px; z-index: 10; }
-#boxTrick   { float: left; margin: 20px; width: 300px; background: white; border-style: none;}
+#boxTrick   { float: left; margin: 20px; width: 300px; background: white; }
 #outerTable{ width: 100%; }
 #innerTable{ width: 100%;}
 #row0{ height:3cm; background: black;}
@@ -25,6 +25,7 @@ body
     
     a { color: #1663cf; text-decoration: none;}
  
+    img { border: none; }
 
   .css3boxTop
   {
