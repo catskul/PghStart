@@ -11,6 +11,7 @@
 	
 	<title>Pittsburgh</title>
 
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
 	<script src="default_scripts.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="default_style.css" type="text/css">
 
@@ -31,8 +32,8 @@
 				<div class="preitem">I'm a:	</div>
 				<div class="buttonGroup">
 					<div class="firstItem viewSelector" onclick="select_view(this, ['resident'])">Resident</div>
-					<div class="item viewSelector" onclick="select_view(this, ['visitor'])">Visitor</div>
-					<div class="lastItem viewSelector" onclick="select_view(this, ['business'])">Business</div>
+					<div class="item viewSelector"      onclick="select_view(this, ['visitor'])" >Visitor</div>
+					<div class="lastItem viewSelector"  onclick="select_view(this, ['business'])">Business</div>
 				</div>
 			</div>
 		</div>
@@ -67,6 +68,10 @@
 					<a href="http://www.city.pittsburgh.pa.us/parks/html/recreation_centers.html">Rec Centers</a><br>
 					<a href="http://www.city.pittsburgh.pa.us/mayor/html/pothole.html">Report a pothole</a>
 				</div>
+				
+				<div class="boxcontent popular" style="display: none;">
+					suprise!
+				</div>
 			</div>
 	
 			<div class="viewbox css3boxTop resident" id="faq">
@@ -75,10 +80,10 @@
 				</div>
 	
 				<div class="boxTypeSelection">
-					<div class="featuredButton">
+					<div class="featuredButton" onclick="selectFeatured(this);">
 						featured
 					</div>
-					<div class="popularButton">
+					<div class="popularButton" onclick="selectPopular(this);">
 						popular
 					</div>
 				</div><a href="http://www.city.pittsburgh.pa.us/police/html/tow_pound.html">My car was towed. What do I do?</a><br>
@@ -96,10 +101,10 @@
 				</div>
 	
 				<div class="boxTypeSelection">
-					<div class="featuredButton">
+					<div class="featuredButton" onclick="selectFeatured(this);">
 						featured
 					</div>
-					<div class="popularButton">
+					<div class="popularButton" onclick="selectPopular(this);">
 						popular
 					</div>
 				</div><a href="http://catskul.org/Mockup2.html#">April 2 - Geek Art Festival</a><br>
@@ -123,11 +128,11 @@
 					<a href="Neighborhoods.html">neighborhoods</a>
 				</div>
 	
-				<div class="boxTypeSelection-bottom">
-					<div class="featuredButton-bottom">
+				<div class="boxTypeSelection bottom">
+					<div class="featuredButton bottom" onclick="selectFeatured(this);">
 						featured
 					</div>
-					<div class="popularButton-bottom">
+					<div class="popularButton bottom" onclick="selectPopular(this);">
 						popular
 					</div>
 				</div><a href="http://catskul.org/Mockup2.html#">Squirrel Hill</a><br>
@@ -146,11 +151,11 @@
 					Government
 				</div>
 	
-				<div class="boxTypeSelection-bottom">
-					<div class="featuredButton-bottom">
+				<div class="boxTypeSelection bottom">
+					<div class="featuredButton bottom" onclick="selectFeatured(this);">
 						featured
 					</div>
-					<div class="popularButton-bottom">
+					<div class="popularButton bottom" onclick="selectPopular(this);">
 						popular
 					</div>
 				</div><a href="http://www.city.pittsburgh.pa.us/council/">City Council</a><br>
@@ -165,11 +170,11 @@
 					Announcements
 				</div>
 	
-				<div class="boxTypeSelection-bottom">
-					<div class="featuredButton-bottom">
+				<div class="boxTypeSelection bottom">
+					<div class="featuredButton bottom" onclick="selectFeatured(this);">
 						featured
 					</div>
-					<div class="popularButton-bottom">
+					<div class="popularButton bottom" onclick="selectPopular(this);">
 						popular
 					</div>
 				</div><a href="http://catskul.org/Mockup2.html#">Now accepting mixed recycling</a><br>

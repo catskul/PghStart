@@ -69,9 +69,9 @@ body
   .popularButton    { position: absolute; top:0px; padding-top: 3px; right: 0px; padding-right: 10px; text-align: right; color: gray; cursor: pointer; }
   
   .boxTitle-bottom         { position: absolute; top: 0px; left:0px; right: 0px; color: #1663cf; text-align: center; text-transform: uppercase; font: 20.0px Helvetica; padding-top: 5px;}
-  .boxTypeSelection-bottom { position: absolute; bottom: 0px; left: 10px; right: 10px; font: 15.0px Helvetica; color: blue;}
-  .featuredButton-bottom         { position: absolute; bottom:0px; left: 0px; color: black; cursor: pointer; }
-  .featuredButton-bottom          { position: absolute; bottom:0px; right: 0px; text-align: right; color: grey; cursor: pointer;}
+  .boxTypeSelection.bottom { position: absolute; top: auto; bottom: 0px;}
+  .featuredButton.bottom   { position: absolute; top: auto; bottom: 0px; left: 0px; color: black; cursor: pointer; }
+  .popularButton.bottom    { position: absolute; top: auto; bottom: 0px; right: 0px; text-align: right; color: grey; cursor: pointer;}
   
     .preitem  { float: left; margin-right: 3px; padding-top: 3px;}
     .buttonGroup { border: solid thin; -moz-border-radius: 4px; -webkit-border-radius: 4px;  float: left; overflow: hidden; background: gray; cursor: pointer; }
